@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body
+   {
+       margin: 0;
+       padding: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background: #801336;
+   }
+   .box
+   {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      background: #c72c41;
+   }
+   .box ::before
+   {
+       content: '';
+       position : absolute;
+       top: -2px;
+       left: -2px;
+       right: -2px;
+       bottom: -2px;
+       background: #2d132c;
+       z-index: -1;
+   }
+   .box ::after
+   {
+       content: '';
+       position: absolute;
+       top: -2px;
+       left: -2px;
+       right: -2px;
+       bottom: -2px;
+       background: #000000;
+       z-index: -2;
+       filter: blur(40px);
+   }
+   .box:before,
+   .box:after
+   {
+      background: linear-gradient(235deg,#801336,#c72c41,#2d132c,#000000);
+   }
+ 
+      
